@@ -1,2 +1,2 @@
 # test
-Simple scripts for test
+Simple scripts for testing only
