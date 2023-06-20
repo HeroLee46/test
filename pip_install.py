@@ -1,5 +1,5 @@
 import subprocess
-
+print("="*40, "Install package", "="*40)
 # 执行命令 'pip install GPUtil'
 result = subprocess.run('pip install GPUtil', capture_output=True, text=True, shell=True)
 
