@@ -23,7 +23,7 @@ for website in websites:
     driver.get(website)
     time.sleep(2)
 
-print("Test result : Completely loads 5 top webpages")
+print("Edge Browser Test result : Completely loads 5 top webpages")
 
 # 關閉瀏覽器
 driver.quit()
