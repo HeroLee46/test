@@ -18,7 +18,7 @@ service = Service(driver_path)
 driver = webdriver.Edge(service=service, options=options)
 
 # 連續開啟網頁
-websites = ['https://tw.yahoo.com', 'https://www.youtube.com/' , 'https://24h.pchome.com.tw/' , 'http://www.msn.com', 'https://www.bing.com']
+websites = ['https://tw.yahoo.com', 'https://www.youtube.com/' , 'https://24h.pchome.com.tw/' , 'https://www.google.com.tw/', 'https://www.bing.com']
 for website in websites:
     driver.get(website)
     time.sleep(2)
