@@ -9,7 +9,7 @@ ip_regex = r'IPv4 Address.*: ([\d.]+)'
 
 adapters = []
 
-print("="*40, "IP Configuration", "="*40)
+print("="*40, "Network Configuration", "="*40)
 
 for line in data:
     adapter_match = re.match(adapter_regex, line.strip())
