@@ -4,6 +4,7 @@ from selenium.webdriver.edge.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.options import Options
 
+print("="*40, "Edge Brower Test", "="*40)
 # 驅動程式路徑
 driver_path = 'path_to_edge_driver'
 
