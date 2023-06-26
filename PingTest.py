@@ -7,7 +7,7 @@ def ping_google_dns():
     except subprocess.CalledProcessError as e:
         return e.stderr
 
-print("="*40, "Network function check", "="*40)
+print("="*40, "Network Ping Test", "="*40)
 
 ping_result = ping_google_dns()
 print(ping_result)
