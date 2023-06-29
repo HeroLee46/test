@@ -5,20 +5,20 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.options import Options
 
 print("="*40, "Edge Brower Test", "="*40)
-# 驅動程式路徑
+# driver path
 driver_path = 'path_to_edge_driver'
 
-# 建立 Edge 瀏覽器選項
+# Create Edge browser option
 options = Options()
 options.use_chromium = True
 
-# 建立 Edge 瀏覽器服務
+# Create Edge service
 service = Service(driver_path)
 
-# 建立 Edge 瀏覽器物件
+# Create Edge object
 driver = webdriver.Edge(service=service, options=options)
 
-# 連續開啟網頁
+# open 5 top webpages
 websites = ['https://tw.yahoo.com', 'https://www.youtube.com/' , 'https://24h.pchome.com.tw/' , 'https://www.google.com.tw/', 'https://www.bing.com']
 for website in websites:
     driver.get(website)
@@ -26,5 +26,5 @@ for website in websites:
 
 print("Edge Browser Test result : Completely loads 5 top webpages")
 
-# 關閉瀏覽器
+# close browser
 driver.quit()
