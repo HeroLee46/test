@@ -6,10 +6,10 @@ fail=0
 
 timedatectl set-timezone "Asia/Taipei"
 
-mkdir -p /var/log/MFG/
-mkdir -p /var/log/MFG/pi_ping_wlan0_gw/
-file=/var/log/MFG/pi_ping_wlan0_gw/pi_ping_wlan0_gw_$(date +"%Y%m%d_%H%M%S").log
-touch $file
+# mkdir -p /var/log/MFG/
+# mkdir -p /var/log/MFG/pi_ping_wlan0_gw/
+# file=/var/log/MFG/pi_ping_wlan0_gw/pi_ping_wlan0_gw_$(date +"%Y%m%d_%H%M%S").log
+# touch $file
 
 while [ $loop -lt 5 ]
 do
